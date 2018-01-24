@@ -1,0 +1,31 @@
+include ../mixins
+include ../bemto/bemto.pug
+
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		meta(name="viewport" content="width=srcice-width,initial-scale=1")
+		meta(name="keywords" content="")
+
+		link(rel="stylesheet" type='text/css' href="assets/css/libs.css")
+		link(rel="stylesheet" type='text/css' href="assets/css/main.css")
+
+
+		<!--[if lt IE 9]>
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		<![endif]-->
+	body
+		include ../modules/header
+		include ../modules/menu
+		main
+			block content
+		include ../modules/footer
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="assets/js/libs.min.js")
+		script(src="assets/js/main.js")
+		block script

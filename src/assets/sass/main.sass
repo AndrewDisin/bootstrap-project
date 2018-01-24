@@ -1,0 +1,71 @@
+@import 'helpers/vars'
+
+html
+	font-size: 16px
+
+ul,li
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+p
+	margin: 0
+
+a
+	text-decoration: none
+	color: black
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align: middle
+
+
+textarea
+	resize: none
+
+
+section
+	position: relative
+
+
+input,
+select,
+button
+	outline: none
+	
+
+figure
+	margin: 0
+
+
+*, *:before, *:after
+	box-sizing: border-box
+	
+	
+// Общие стили
+@import 'common_styles'
+
+
+// МОДУЛИ
+// Стили шапки
+@import 'modules/header.sass'
+
+// Стили футера
+@import 'modules/footer.sass'
+
+// Стили меню
+@import 'modules/menu.sass'
+
+
+// СТРАНИЦЫ
+// Стили главной страницы
+@import 'pages/index.sass'
+
+
+// ПРОЧЕЕ
+// Стили типографики
+@import 'helpers/typography'
