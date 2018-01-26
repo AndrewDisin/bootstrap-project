@@ -1,103 +1,20 @@
 +b.SECTION.works
     .container
         .row
-            +b.H1.h1.col-12 Our works
-            +b.H2.h2_gray.col-12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            +b.H1.h1.col-12= content.worksInfo.title
+            +b.H2.h2_gray.col-12= content.worksInfo.subtitle
         .row
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work1.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") Fully Responsive
-                +e.category Design / Branding
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work2.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") Font Awesome Icons
-                +e.category Design / Branding
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work3.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") HTML3 & CSS3
-                +e.category App design / development
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work4.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") Various Layouts
-                +e.category Branding
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work5.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") Fully Responsive
-                +e.category Design / Branding
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work6.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") Font Awesome Icons
-                +e.category Design / Branding
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work7.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") HTML3 & CSS3
-                +e.category App design / development
-            +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.miniature(src="assets/img/general/works/work8.jpg")
-                    +b.work-options
-                        +e.views
-                            +icon("work-options__views-icon","eye")
-                            +e.count-views 279
-                        +e.date
-                            +e.current-date 07/03/14
-                            +icon("work-options__date-icon", "clock")
-                +e.A.title(href="/") Various Layouts
-                +e.category Branding
+            each object in content.worksList
+                +b.ARTICLE.works-item.col-12.col-md-6.col-lg-3
+                    +e.image
+                        +e.IMG.miniature(src= object['src'] alt="Work1")
+                        +b.work-options
+                            +e.views
+                                +icon("work-options__views-icon", object['viewIconName'])
+                                +e.count-views= object['countViews']
+                            +e.date
+                                +e.current-date= object['currentDate']
+                                +icon("work-options__date-icon", object["dateIconName"])
+                    +e.A.title(href= object['href'])= object['title']
+                    +e.category= object['category']
 

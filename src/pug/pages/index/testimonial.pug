@@ -1,37 +1,24 @@
 +b.SECTION.testimonial
     .container
         .row
-            +b.H1.h1.col-12 Stats & Testimonial
-            +b.H2.h2_gray.col-12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            +b.H1.h1.col-12= content.testimonialInfo.title
+            +b.H2.h2_gray.col-12= content.testimonialInfo.subtitle
         .row.justify-content-center
-            +b.testimonial-item.col-6.col-lg-2
-                +e.image
-                    +icon("testimonial-item__icon","products")
-                +e.count 20
-                +e.description Products
-            +b.testimonial-item.col-6.col-lg-2
-                +e.image
-                    +icon("testimonial-item__icon","downloads")
-                +e.count 120,000
-                +e.description Downloads
-            +b.testimonial-item.col-6.col-lg-2
-                +e.image
-                    +icon("testimonial-item__icon","customers")
-                +e.count 1220
-                +e.description Customers
-            +b.testimonial-item.col-6.col-lg-2
-                +e.image
-                    +icon("testimonial-item__icon","like")
-                +e.count 900
-                +e.description Like
+            each object in content.testimonialList
+                +b.testimonial-item.col-6.col-lg-2
+                    +e.image
+                        +icon("testimonial-item__icon", object['iconName'])
+                    +e.count= object['count']
+                    +e.description= object['description']
         .row
-            +b.comment.col-12.m-auto.col-lg-7
-                +e.image
-                    +e.IMG.avatar(src="assets/img/general/team/person1.jpg")
-                +e.name John Doe
-                +e.decription From Wordpress
-                +b.quote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
-                    +e.left
-                        +icon("quote__left-icon","left-quote")
-                    +e.right
-                        +icon("quote__right-icon","right-quote")
+            each object in content.commentInfo
+                +b.comment.col-12.m-auto.col-lg-7
+                    +e.image
+                        +e.IMG.avatar(src= object['src'] alt= object['alt'])
+                    +e.name= object['name']
+                    +e.decription= object['description']
+                    +b.quote= object['quote']
+                        +e.left
+                            +icon("quote__left-icon", object['leftIconName'])
+                        +e.right
+                            +icon("quote__right-icon", object['rightIconName'])

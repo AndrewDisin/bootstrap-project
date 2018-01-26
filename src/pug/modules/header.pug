@@ -4,18 +4,11 @@
             +b.header-menu.col
                +icon("header-menu__icon","menu")
             +b.A.header-logo.col(href="/")
-                +icon("header-logo__icon","logo")
-                +e.name tinyone
+                each object in content.logo
+                    +icon("header-logo__icon", object['icon'])
+                    +e.name= object['name']
             +b.UL.header-social.d-flex.justify-content-center.col-12.col-md.justify-content-md-end
-                +b.LI.social-item
-                    +e.A.link(href="/")
-                        +icon("social-item__icon",'facebook')
-                +b.LI.social-item
-                    +e.A.link(href="/")
-                        +icon("social-item__icon",'twitter')
-                +b.LI.social-item
-                    +e.A.link(href="/")
-                        +icon("social-item__icon",'google-plus')
-                +b.LI.social-item
-                    +e.A.link(href="/")
-                        +icon("social-item__icon",'pinterest')
+                each object in content.socialList
+                    +b.LI.social-item
+                        +e.A.link(href="/")
+                            +icon("social-item__icon", object['name'])

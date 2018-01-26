@@ -1,12 +1,312 @@
 {
-  "contentPages" : {
-  	"": {
-      "" : "",
-      "" : ""
-    },
-  	"": {
-      "" : "",
-      "" : ""
+  "logo" : {
+  	"item1": {
+      "icon" : "logo",
+      "name" : "tinyone"
     }
+  },
+  "socialList" : {
+    "item1" : {
+      "name": "facebook"
+    },
+    "item2" : {
+      "name": "twitter"
+    },
+    "item3" : {
+      "name": "google-plus"
+    },
+    "item4" : {
+      "name": "pinterest"
+    }
+  },
+  "mainBanneriInfo" : {
+    "title" : "Inspire your inspiration",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+    "button" : "Get started"
+  },
+  "featuresInfo" : {
+    "title" : "Tinyone features",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "featuresList" : {
+    "item1" : {
+      "iconName" : "tablet",
+      "title" : "Fully Responsive",
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    "item2" : {
+      "iconName" : "lime",
+      "title" : "Fully Layered PSD",
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    "item3" : {
+      "iconName" : "folder",
+      "title" : "Font Awesome Icons",
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    "item4" : {
+      "iconName" : "html",
+      "title" : " HTML3 & CSS3",
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    "item5" : {
+      "iconName" : "mail",
+      "title" : "Email Template",
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    "item6" : {
+      "iconName" : "flag",
+      "title" : "Free to download",
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    }
+  },
+  "pricingInfo" : {
+    "title" : "Pricing And Free Trial",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "pricingList" : {
+    "item1" : {
+      "iconName" : "tablet",
+      "title" : "Basic",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "cost" : "FREE",
+      "period" : "free forever",
+      "button" : "Get free now"
+    },
+    "item2" : {
+      "iconName" : "laptop",
+      "title" : "Standard",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "cost" : "$99",
+      "period" : "month",
+      "button" : "UPGRADE"
+    },
+    "item3" : {
+      "iconName" : "monitor",
+      "title" : "Enterprise",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "cost" : "$199",
+      "period" : "month",
+      "button" : "LEARN MORE"
+    }
+  },
+  "worksInfo" : {
+    "title" : "Our works",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "worksList" : {
+    "item1" : {
+      "src" : "assets/img/general/works/work1.jpg",
+      "alt" : "Work1",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "Fully Responsive",
+      "href" : "/",
+      "category" : "Design / Branding"
+    },
+    "item2" : {
+      "src" : "assets/img/general/works/work2.jpg",
+      "alt" : "Work2",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "Font Awesome Icons",
+      "href" : "/",
+      "category" : "Design / Branding"
+    },
+    "item3" : {
+      "src" : "assets/img/general/works/work3.jpg",
+      "alt" : "Work3",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "HTML3 & CSS3",
+      "href" : "/",
+      "category" : "App design / development"
+    },
+    "item4" : {
+      "src" : "assets/img/general/works/work4.jpg",
+      "alt" : "Work4",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "Various Layouts",
+      "href" : "/",
+      "category" : "Branding"
+    },
+    "item5" : {
+      "src" : "assets/img/general/works/work5.jpg",
+      "alt" : "Work5",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "Fully Responsive",
+      "href" : "/",
+      "category" : "Design / Branding"
+    },
+    "item6" : {
+      "src" : "assets/img/general/works/work6.jpg",
+      "alt" : "Work6",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "Font Awesome Icons",
+      "href" : "/",
+      "category" : "Design / Branding"
+    },
+    "item7" : {
+      "src" : "assets/img/general/works/work7.jpg",
+      "alt" : "Work7",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "HTML3 & CSS3",
+      "href" : "/",
+      "category" : "App design / development"
+    },
+    "item8" : {
+      "src" : "assets/img/general/works/work8.jpg",
+      "alt" : "Work8",
+      "viewIconName" : "eye",
+      "countViews" : "279",
+      "currentDate" : "07/03/14",
+      "button" : "Get free now",
+      "dateIconName" : "clock",
+      "title" : "Various Layouts",
+      "href" : "/",
+      "category" : "Branding"
+    }
+  },
+  "teamInfo" : {
+    "title" : "Our team",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "teamSocialList" : {
+    "item1" : {
+      "href" : "/",
+      "iconName" : "facebook"
+    },
+    "item2" : {
+      "href" : "/",
+      "iconName" : "twitter"
+    },
+    "item3" : {
+      "href" : "/",
+      "iconName" : "linkedin"
+    }
+  },
+  "teamList" : {
+    "item1" : {
+      "src" : "assets/img/general/team/person1.jpg",
+      "alt" : "person1",
+      "name" : "John Doe",
+      "position" : "UI Designer",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    },
+    "item2" : {
+      "src" : "assets/img/general/team/person2.jpg",
+      "alt" : "person2",
+      "name" : "John Doe",
+      "position" : "UI Designer",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    },
+    "item3" : {
+      "src" : "assets/img/general/team/person3.jpg",
+      "alt" : "person3",
+      "name" : "John Doe",
+      "position" : "UI Designer",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    },
+    "item4" : {
+      "src" : "assets/img/general/team/person4.jpg",
+      "alt" : "person4",
+      "name" : "John Doe",
+      "position" : "UI Designer",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    }
+  },
+  "testimonialInfo" : {
+    "title" : "Stats & Testimonial",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "testimonialList" : {
+    "item1" : {
+      "iconName" : "products",
+      "count" : "20",
+      "description" : "Products"
+    },
+    "item12" : {
+      "iconName" : "downloads",
+      "count" : "120,000",
+      "description" : "Downloads"
+    },
+    "item3" : {
+      "iconName" : "customers",
+      "count" : "1220",
+      "description" : "Customers"
+    },
+    "item4" : {
+      "iconName" : "like",
+      "count" : "900",
+      "description" : "Like"
+    }
+  },
+  "commentInfo" : {
+    "item1": {
+      "src": "assets/img/general/team/person1.jpg",
+      "alt": "person1",
+      "name": "John Doe",
+      "decription": "From Wordpress",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.",
+      "leftIconName": "left-quote",
+      "rightIconName": "right-quote"
+    }
+  },
+  "keepintuchInfo" : {
+    "title" : "Keep in touch with us",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "keepintuchlList" : {
+    "item1" : {
+      "iconName" : "address",
+      "title" : "Address",
+      "info" : "66, Dang Van ngu, Dong Da, Ha noi, Vietnam"
+    },
+    "item12" : {
+      "iconName" : "phone",
+      "title" : "E-mail",
+      "info" : "contact@halovietnam.com"
+    },
+    "item3" : {
+      "iconName" : "customers",
+      "title" : "Phone",
+      "info" : "+844 1234 56789"
+    }
+  },
+  "newletterInfo" : {
+    "title" : "Sign up for our newsletter",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
+  },
+  "footerContactInfo" : {
+    "address" : "HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam",
+    "email" : "contact@halovietnam.com",
+    "emailLink" : "mailto: contact@halovietnam.com",
+    "phone" : "+844 35149182",
+    "phoneLink" : "tel:+84435149182"
   }
 }

@@ -2,9 +2,9 @@
     .container
         .row
             +b.contact-info.col-12.col-lg-4
-                +e.address HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam
-                +e.A.email(href="mailto: contact@halovietnam.com") contact@halovietnam.com
-                +e.A.phone(href="tel:+84435149182") +844 35149182
+                +e.address= content.footerContactInfo.address
+                +e.A.email(href= content.footerContactInfo.emailLink)= content.footerContactInfo.email
+                +e.A.phone(href= content.footerContactInfo.phoneLink)= content.footerContactInfo.phones
             +b.links.col-6.col-lg-2
                 +e.UL.list
                     +e.LI.item

@@ -1,0 +1,13 @@
+ $family-wight: ( SourceSansProLight: 300 normal, SourceSansProRegular: 400 normal, SourceSansProBold: 700 normal );
+
+ @each $font-family, $font-option in $family-wight{
+ 	@font-face {
+ 		font-family: "SourceSansPro";
+ 		src: url("../fonts/"+ $font-family +"/"+ $font-family +".eot");
+ 		src: url("../fonts/"+ $font-family +"/"+ $font-family +".eot?#iefix")format("embedded-opentype"),
+ 		url("../fonts/"+ $font-family +"/"+ $font-family +".woff") format("woff"),
+ 		url("../fonts/"+ $font-family +"/"+ $font-family +".ttf") format("truetype");
+ 		font-style:  nth( $font-option, 2 );
+ 		font-weight: nth( $font-option, 1 );
+	}
+}

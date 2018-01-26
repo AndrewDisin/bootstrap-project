@@ -1,42 +1,13 @@
 +b.SECTION.features
     .container
         .row
-            +b.H1.h1.col-12 Tinyone features
-            +b.H2.h2_gray.col-12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            +b.H1.h1.col-12= content.featuresInfo.title
+            +b.H2.h2_gray.col-12= content.featuresInfo.subtitle
         .row
-            +b.features-item.col-12.col-md-6.col-lg-4
-                +e.image
-                    +icon("features-item__icon", "tablet")
-                +e.decription
-                    +e.A.title(href="/") Fully Responsive
-                    +e.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-            +b.features-item.col-12.col-md-6.col-lg-4
-                +e.image
-                    +icon("features-item__icon", "lime")
-                +e.decription
-                    +e.A.title(href="/") Fully Layered PSD
-                    +e.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-            +b.features-item.col-12.col-md-6.col-lg-4
-                +e.image
-                    +icon("features-item__icon", "folder")
-                +e.decription
-                    +e.A.title(href="/") Font Awesome Icons
-                    +e.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-            +b.features-item.col-12.col-md-6.col-lg-4
-                +e.image
-                    +icon("features-item__icon", "html")
-                +e.decription
-                    +e.A.title(href="/") HTML3 & CSS3
-                    +e.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-            +b.features-item.col-12.col-md-6.col-lg-4
-                +e.image
-                    +icon("features-item__icon", "mail")
-                +e.decription
-                    +e.A.title(href="/") Email Template
-                    +e.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-            +b.features-item.col-12.col-md-6.col-lg-4
-                +e.image
-                    +icon("features-item__icon", "flag")
-                +e.decription
-                    +e.A.title(href="/") Free to download
-                    +e.subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+            each object in content.featuresList
+                +b.features-item.col-12.col-md-6.col-lg-4
+                    +e.image
+                        +icon("features-item__icon", object['iconName'])
+                    +e.decription
+                        +e.A.title(href="/")= object['title']
+                        +e.subtitle= object['subtitle']

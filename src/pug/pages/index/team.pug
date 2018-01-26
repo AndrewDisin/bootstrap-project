@@ -1,70 +1,18 @@
 +b.SECTION.team
     .container
         .row
-            +b.H1.h1.col-12 Our team
-            +b.H2.h2_gray.col-12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            +b.H1.h1.col-12= content.teamInfo.title
+            +b.H2.h2_gray.col-12= content.teamInfo.subtitle
         .row.justify-content-center
-            +b.team-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.avatar(src="assets/img/general/team/person1.jpg")
-                +e.name John Doe
-                +e.position UI Designer
-                +e.description Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                +b.UL.team-social
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "facebook")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "twitter")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "linkedin")
-            +b.team-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.avatar(src="assets/img/general/team/person2.jpg")
-                +e.name John Doe
-                +e.position UI Designer
-                +e.description Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                +b.UL.team-social
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "facebook")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "twitter")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "linkedin")
-            +b.team-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.avatar(src="assets/img/general/team/person3.jpg")
-                +e.name John Doe
-                +e.position UI Designer
-                +e.description Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                +b.UL.team-social
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "facebook")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "twitter")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "linkedin")
-            +b.team-item.col-12.col-md-6.col-lg-3
-                +e.image
-                    +e.IMG.avatar(src="assets/img/general/team/person4.jpg")
-                +e.name John Doe
-                +e.position UI Designer
-                +e.description Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                +b.UL.team-social
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "facebook")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "twitter")
-                    +e.LI.social-item
-                        +e.A.link(href="/")
-                            +icon("team-social__icon", "linkedin")
+            each object in content.teamList
+                +b.team-item.col-12.col-md-6.col-lg-3
+                    +e.image
+                        +e.IMG.avatar(src= object['src'] alt= object['alt'])
+                    +e.name= object['name']
+                    +e.position= object['position']
+                    +e.description= object['description']
+                    +b.UL.team-social
+                        each object in content.teamSocialList
+                            +e.LI.social-item
+                                +e.A.link(href= object['href'])
+                                    +icon("team-social__icon", object['iconName'])
