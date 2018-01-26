@@ -1,0 +1,48 @@
+.keepintuch{
+  @media screen and(max-width: $md){
+    padding: 0 0 50px;
+  }
+
+  padding: 0 0 75px;
+}
+
+
+.keepintuch-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+
+  &__image{
+    max-width: 20px;
+    max-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__icon{
+    width: 20px;
+    height: 20px;
+  }
+
+  &__title{
+    font-size: 24px;
+    color: $lightBlack;
+    line-height: 0.5;
+    margin-bottom: 5px;
+  }
+
+  &__info{
+    font-size: 14px;
+    color: $lightGray;
+    width: 70%;
+  }
+
+}
+
+.keepintuch-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

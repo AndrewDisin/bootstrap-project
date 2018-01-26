@@ -1,0 +1,66 @@
+.mail-footer{
+  @media screen and (max-width: $md){
+    padding: 0 0 50px;
+  }
+
+  background-color: $lightBlack;
+  padding: 0 0 255px;
+}
+
+.contact-info{
+  @media screen and(max-width: $md){
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  &__address, &__email, &__phone{
+    @media screen and(max-width: $md) {
+      width: 100%;
+    }
+
+    color: $white;
+    width: 50%;
+  }
+
+  &__email, &__phone{
+    transition: 0.3s linear;
+
+    &:hover{
+      color: $mainYellow;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+.links{
+  margin-bottom: 20px;
+
+  &__list{
+    @media screen and(max-width: $md) {
+      text-align: center;
+    }
+  }
+
+  &__item{
+    padding: 5px 0;
+  }
+
+  &__link{
+    color: $white;
+    font-size: 16px;
+    transition: 0.3s linear;
+
+    &:hover{
+      color: $mainYellow;
+      text-decoration: none;
+    }
+
+  }
+
+}

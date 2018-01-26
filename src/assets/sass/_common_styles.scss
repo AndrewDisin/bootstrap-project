@@ -19,6 +19,7 @@
     font-size: 22px;
     font-weight: 700;
     border: 2px solid $lightBlack;
+    cursor: pointer;
   }
 
   &_middle{
@@ -26,6 +27,25 @@
     font-size: 16px;
     padding: 15px;
     max-width: 150px;
+  }
+
+  &_black{
+    background-color: $lightBlack;
+    color: $white;
+    &:hover{
+      color: $mainYellow;
+      background-color: $white;
+    }
+  }
+
+  &_white{
+    background-color: $white;
+    color: $lightBlack;
+    &:hover{
+      color: $mainYellow;
+      background-color: $lightBlack;
+      border-color: $white;
+    }
   }
 
   &_yellow{
@@ -61,6 +81,52 @@
     }
 
   }
+}
 
+.input{
+  width: 100%;
+  border: 2px solid $lightBlack;
+
+  &_big{
+    max-width: 480px;
+    font-size: 16px;
+    padding: 20px 15px;
+    margin-bottom: 25px;
+  }
+
+  &_fluid{
+    @media screen and (max-width: $md){
+      margin: 0 0 10px 0;
+    }
+
+    width: 100%;
+    max-width: 600px;
+    margin: 0 5px;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  &_white{
+    color: $lightBlack;
+    background-color: $white;
+  }
+
+}
+
+.textarea{
+  width: 100%;
+  border: 2px solid $lightBlack;
+
+  &_big{
+    max-width: 480px;
+    font-size: 16px;
+    padding: 20px 15px;
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+
+  &_white{
+    color: $lightBlack;
+  }
 
 }

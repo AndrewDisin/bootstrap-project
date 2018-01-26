@@ -1,0 +1,17 @@
+.newletter{
+  @media screen and(max-width: $md){
+    padding: 0 0 50px;
+  }
+
+  background-color: $lightBlack;
+  padding: 115px;
+}
+
+.newletter-form{
+  @media screen and (max-width: $md){
+   flex-direction: column;
+  }
+
+  display: flex;
+  justify-content: center;
+}

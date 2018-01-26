@@ -1,0 +1,27 @@
++b.SECTION.keepintuch
+    .container
+        .row
+            +b.H1.h1.col-12 Keep in touch with us
+            +b.H2.h2_gray.col-12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+        .row.justify-content-center
+            +b.keepintuch-item.col-12.col-lg-3
+                +e.image
+                    +icon("keepintuch-item__icon", "address")
+                +e.title Address
+                +e.info 66, Dang Van ngu, Dong Da, Ha noi, Vietnam
+            +b.keepintuch-item.col-12.col-lg-3
+                +e.image
+                    +icon("keepintuch-item__icon", "emailblack")
+                +e.title E-mail
+                +e.info contact@halovietnam.com
+            +b.keepintuch-item.col-12.col-lg-3
+                +e.image
+                    +icon("keepintuch-item__icon", "phone")
+                +e.title Phone
+                +e.info +844 1234 56789
+        .row.justify-content-center
+            +b.FORM.keepintuch-form.col-12.col-md-6
+                +b.INPUT.input_big._white(type="email" id="keepintuch-email" name="keepintuch-email" placeholder="Email")
+                +b.INPUT.input_big._white(type="text" id="keepintuch-name" name="keepintuch-name" placeholder="Full name")
+                +b.TEXTAREA.textarea_big._white(id="keepintuch-meaasge" name="keepintuch-meaasge" placeholder="Message")
+                +b.BUTTON.button_big.button_black(type="submit" id="keepintuch-form-submit" name="keepintuch-form-submit") Send message

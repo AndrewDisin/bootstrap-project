@@ -11,6 +11,8 @@
     margin-bottom: 40px;
   }
 
+  margin-bottom: 60px;
+
   &:hover{
 
     .testimonial-item__icon{
@@ -51,6 +53,76 @@
   &__description{
     font-size: 14px;
     color: $lightGray;
+  }
+
+}
+
+
+.comment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__image{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__avatar{
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+  }
+
+  &__name{
+    font-size: 22px;
+    color: $lightBlack;
+    margin-bottom: 13px;
+  }
+
+  &__decription{
+    font-size: 16px;
+    color: $lightGray;
+    margin-bottom: 30px;
+  }
+
+}
+
+.quote{
+  @media screen and(max-width: $md){
+    padding: 0 30px;
+  }
+
+  position: relative;
+  font-size: 20px;
+  color: $lightGray;
+  padding: 0 60px;
+
+  &__left{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+  }
+
+  &__right{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-100%);
+  }
+
+  &__left-icon, &__right-icon{
+    width: 18px;
+    height: 18px;
+    fill: $lightGray;
   }
 
 }

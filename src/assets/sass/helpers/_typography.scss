@@ -4,15 +4,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	
 
 h1, .h1 {
+	@media screen and (max-width: $md){
+		padding: 50px 20px;
+	}
+
 	font-size: 48px;
 	color: $lightBlack;
 	text-align: center;
 	margin-bottom: 20px;
+
+	&_white{
+		color: white;
+	}
 }
 
 h2, .h2 {
 	@media screen and (max-width: $md){
-		padding: 0 20px;
+		padding: 0 40px;
 	}
 
 	font-size: 20px;
@@ -24,7 +32,7 @@ h2, .h2 {
 
 	&_gray{
 		@media screen and (max-width: $md){
-			padding: 0;
+			padding: 0 15px;
 			margin-bottom: 60px;
 		}
 
