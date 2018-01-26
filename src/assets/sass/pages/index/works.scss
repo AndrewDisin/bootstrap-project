@@ -1,0 +1,123 @@
+.works{
+  @media screen and (max-width: $md){
+    padding: 0 0 50px;
+  }
+
+  padding: 0 0 200px;
+
+}
+
+.works-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+
+  &__image{
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 20px;
+    
+    &:hover{
+      cursor: pointer;
+
+      &:before, &:after{
+        opacity: 1;
+      }
+
+    }
+
+    &:before{
+      transition: 0.3s linear;
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $lightBlack;
+    }
+
+    &:after{
+      transition: 0.3s linear;
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url(../img/general/icon_sprites.png) -10px -10px;
+    }
+
+  }
+
+  &__miniature{
+    width: 100%;
+  }
+
+  &__title{
+    font-size: 22px;
+    color: $lightBlack;
+    margin-bottom: 8px;
+    line-height: 0.5;
+    transition: 0.3s linear;
+
+    &:hover{
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
+
+  &__category{
+    font-size: 16px;
+    color: $lightGray;
+    margin-bottom: 0;
+  }
+
+}
+
+.work-options{
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+
+  &__views, &__date{
+    display: flex;
+    align-items: center;
+  }
+
+  &__views-icon, &__date-icon{
+    fill: $white;
+    width: 23px;
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  &__date-icon{
+    margin-right: 0;
+  }
+
+  &__count-views, &__current-date{
+    font-size: 14px;
+    color: $white;
+  }
+
+  &__current-date{
+    margin-right: 4px;
+  }
+
+}

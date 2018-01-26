@@ -5,9 +5,9 @@ module.exports = function () {
     var pxtorem = require('postcss-pxtorem');
     var sortCSSmq = require('sort-css-media-queries');
 
-    $.gulp.task('sass:build', () => {
+    $.gulp.task('scss:build', () => {
         var processors = [ pxtorem({replace: false}), mqpacker({sort: sortCSSmq.desktopFirst}), autoprefixer({browsers: ['last 10 version']}) ];
-        return $.gulp.src(['./src/assets/sass/main.sass', './src/assets/sass/libs.sass'])
+        return $.gulp.src(['./src/assets/sass/main.scss', './src/assets/sass/libs.scss'])
             .pipe($.gp.sass({
             }))
             .pipe($.gp.csscomb())
@@ -16,15 +16,15 @@ module.exports = function () {
             .pipe($.gulp.dest('./build/assets/css/'))
     });
 
-    $.gulp.task('sass:src', () => {
+    $.gulp.task('scss:src', () => {
         var processors = [ pxtorem({replace: false}), mqpacker({sort: sortCSSmq.desktopFirst}), autoprefixer({browsers: ['last 10 version']}) ];
-        return $.gulp.src(['./src/assets/sass/main.sass', './src/assets/sass/libs.sass'])
+        return $.gulp.src(['./src/assets/sass/main.scss', './src/assets/sass/libs.scss'])
             .pipe($.gp.sourcemaps.init())
             .pipe($.gp.sass({
             }))
             .on('error', $.gp.notify.onError(function (error) {
                 return {
-                    title: 'Sass',
+                    title: 'Scss',
                     message: error.message
                 };
             }))

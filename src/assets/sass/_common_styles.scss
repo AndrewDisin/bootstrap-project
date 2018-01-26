@@ -1,0 +1,66 @@
+.button{
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s linear;
+  cursor: pointer;
+
+  &_big{
+    @media screen and (max-width: $md){
+      max-width: 100%;
+    }
+
+    width: 100%;
+    max-width: 260px;
+    padding: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    border: 2px solid $lightBlack;
+  }
+
+  &_middle{
+    @extend .button_big;
+    font-size: 16px;
+    padding: 15px;
+    max-width: 150px;
+  }
+
+  &_yellow{
+    background-color: transparent;
+    color: $lightBlack;
+    &:hover{
+      color: $mainYellow;
+      background-color: $lightBlack;
+    }
+  }
+
+  &_down{
+    @media screen and (max-width: $md){
+      bottom: 20px;
+    }
+
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    background: url(../img/general/icon_sprites.png) -78px -10px;
+
+    &:hover{
+      @media screen and (max-width: $md){
+        bottom: 10px;
+      }
+
+      opacity: 0.3;
+      bottom: 40px;
+    }
+
+  }
+
+
+}

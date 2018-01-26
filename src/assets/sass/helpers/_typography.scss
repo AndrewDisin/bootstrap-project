@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0;
+}
+	
+
+h1, .h1 {
+	font-size: 48px;
+	color: $lightBlack;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h2, .h2 {
+	@media screen and (max-width: $md){
+		padding: 0 20px;
+	}
+
+	font-size: 20px;
+	color: $lightBlack;
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 0 20%;
+
+
+	&_gray{
+		@media screen and (max-width: $md){
+			padding: 0;
+			margin-bottom: 60px;
+		}
+
+		color: $lightGray;
+		padding: 0 10%;
+		margin-bottom: 80px;
+	}
+}
+
+h3, .h3 {
+	border: none;
+}
